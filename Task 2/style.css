@@ -1,0 +1,125 @@
+/* Resetting default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+header {
+    background-color: #333; /* Dark gray header background */
+    color: #c07152; /* White text color */
+    padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+header nav ul {
+    display: flex;
+    margin-left: 70%;
+    list-style: none; /* Remove bullets from the list */
+}
+
+header nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+header a {
+    text-decoration: none; /* Remove underline from links */
+    color: #a04b4b; /* White link color */
+}
+
+section{
+    height: 100vh;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .Container{
+        text-align: center; /* Center content horizontally */
+        margin-top: 20px;
+    }
+    
+    
+    .Container img{
+    height: 300px;
+    border-radius: 50%;
+    mix-blend-mode: darken;
+    }
+    
+    .Container h2{
+    margin-top: 2%;
+    font-size: 4em;
+    }
+
+    .container h1 {
+        margin-bottom: 10px;
+        font-size: 75px;
+    }
+
+    .Container p ul{
+    margin-top: 2%;
+    font-size: 1.5rem;
+    
+    }
+    
+    footer {
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    }
+
+    #intro {
+        background-color: rgb(232, 211, 76);
+        }
+        #about{
+        background-color: rgb(232, 211, 76);
+        }
+        #contact{
+        background-color: rgb(232, 211, 76);
+        }
+
+
+/* Responsive design for smaller devices */
+@media only screen and (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Modify font size or other properties for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Hide certain elements or modify their appearance */
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Responsive design for larger devices */
+@media only screen and (min-width: 1200px) {
+    /* Adjust layout for larger screens */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Modify font size or other properties for larger screens */
+    h1 {
+        font-size: 36px;
+    }
+
+    /* Show hidden elements or modify their appearance */
+    .sidebar {
+        display: block;
+    }
+}
