@@ -1,0 +1,128 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #333; 
+    color: #c07152;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+    margin: 0;
+    padding-right: 10%;
+}
+
+header nav ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+header a {
+    text-decoration: none;
+    color: #a04b4b; 
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 211, 76);
+}
+
+.container {
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.container ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 20px; 
+}
+
+.container ul li {
+    margin: 5px 0; 
+}
+
+.container img {
+    height: 300px;
+    border-radius: 50%;
+    mix-blend-mode: darken;
+}
+
+.container h2 {
+    margin-top: 2%;
+    font-size: 4em;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 3em; 
+}
+
+.container p {
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+footer {
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #333;
+    color: #c07152; 
+    padding: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+form button {
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555; 
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+}
